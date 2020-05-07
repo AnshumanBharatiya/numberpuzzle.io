@@ -130,9 +130,9 @@
 			<button></button>
 		</div>
 		<div class="footer">
-			<button>Play</button>
 			<span id="move">Move:</span>
-        	<span id="time">Time:</span>
+			<button>Play</button>
+        		<span id="time">Time:</span>
 		</div>
 	</div>
 
@@ -323,13 +323,13 @@ class Game {
     });
     document.querySelector(".footer button").replaceWith(newButton);
 
-    // Render move
+    // count move
     document.getElementById("move").textContent = `Move: ${move}`;
 
-    // Render time
+    // count time
     document.getElementById("time").textContent = `Time: ${time}`;
 
-    // Render message
+    // show win  message
     if (status === "won") {
       document.querySelector(".message").textContent = "You win!";
     } else {
